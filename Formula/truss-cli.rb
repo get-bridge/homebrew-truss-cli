@@ -3,9 +3,9 @@ class TrussCli < Formula
   homepage "https://github.com/instructure/truss-cli"
   version "0.0.1"
 
-  # depends_on "kubectl"
-  # depends_on "vault"
-  # depends_on "sshuttle"
+  depends_on "kubectl"
+  depends_on "vault"
+  depends_on "sshuttle"
 
   def self.go_os
     OS.mac? ? :Darwin : :Linux
@@ -32,6 +32,6 @@ class TrussCli < Formula
   end
 
   test do
-    system bin/"muss", "help"
+    system bin/"truss-cli", "help"
   end
 end
