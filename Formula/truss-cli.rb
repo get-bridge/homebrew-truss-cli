@@ -28,10 +28,11 @@ class TrussCli < Formula
   }[basename])
 
   def install
-    bin.install "truss-cli"
+    system "cp", "truss-cli", "truss"
+    bin.install "truss"
   end
 
   test do
-    system bin/"truss-cli", "help"
+    system bin/"truss", "help"
   end
 end
