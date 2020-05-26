@@ -1,7 +1,7 @@
 class TrussCli < Formula
   desc "CLI to help manage many k8s clusters"
-  homepage "https://github.com/instructure/truss-cli"
-  version "0.0.2"
+  homepage "https://github.com/instructure-bridge/truss-cli"
+  version "0.0.3"
 
   depends_on "kubectl"
   depends_on "vault"
@@ -19,12 +19,12 @@ class TrussCli < Formula
     "truss-cli_#{version}_#{go_os}_#{go_arch}.tar.gz"
   end
 
-  url "https://github.com/instructure/truss-cli/releases/download/v#{version}/#{basename}"
+  url "https://github.com/instructure-bridge/truss-cli/releases/download/v#{version}/#{basename}"
   sha256({
-    "truss-cli_0.0.2_Linux_x86_64.tar.gz" => "8880d344840c6268a55ee3f03062fe8cfacdb6da98b2eecff8d2931307cf68a8",
-    "truss-cli_0.0.2_Linux_i386.tar.gz" => "e5676f3c30790935da306f9d4f04619b64fdb662b4225bacc1e982dc014537c4",
-    "truss-cli_0.0.2_Darwin_i386.tar.gz" => "8653c9641456d369e9a0963d201c252651627d970abe9f3aee6b5f4052c8cc12",
-    "truss-cli_0.0.2_Darwin_x86_64.tar.gz" => "ce4c69cd722b2934f9de85b2ab62fda28364ad715d6734021a3574071ea1694c",
+    "truss-cli_0.0.3_Linux_x86_64.tar.gz" => "5d61d8dfba0c2b7d64f4aa429169810d0bdacffbc781cadd8c6d31ea0b17e048",
+    "truss-cli_0.0.3_Linux_i386.tar.gz" => "87140c3bd20a40e76a3882e824aa494c0f6799e762c24cec20bdb4ddd7ee9555",
+    "truss-cli_0.0.3_Darwin_i386.tar.gz" => "3deee82d876bf1a59f0b8ec9bfbcfdc058c1a553404c82540d9ce224068bb648",
+    "truss-cli_0.0.3_Darwin_x86_64.tar.gz" => "ef47deafb501a82c6c71b5c74e1f95c9177f673acc8473594b30cbb0701a5ded",
   }[basename])
 
   def install
