@@ -12,7 +12,7 @@ class TrussCli < Formula
   end
 
   def self.go_arch
-    OS.mac? ? ::MacOS.preferred_arch.to_s : `uname -m`.chomp
+    ::Hardware::CPU.arch
   end
 
   def self.basename
