@@ -2,16 +2,16 @@
 class TrussCli < Formula
   desc ""
   homepage ""
-  version "0.0.8"
+  version "0.0.9"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/instructure-bridge/truss-cli/releases/download/v0.0.8/truss-cli_0.0.8_Darwin_x86_64.tar.gz"
-    sha256 "522e4c348524eff549dc586639505733277153cfd78871c8bf03741c3a7bcf4d"
+    url "https://github.com/instructure-bridge/truss-cli/releases/download/v0.0.9/truss-cli_0.0.9_Darwin_x86_64.tar.gz"
+    sha256 "e77da4af45a9189916e3373aa0e113ae9f138c3a3ea413c5ced707df5e38e8fe"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/instructure-bridge/truss-cli/releases/download/v0.0.8/truss-cli_0.0.8_Linux_x86_64.tar.gz"
-      sha256 "1a67c3ff3b4c6762af167cd55f2730f9965879a99e579989d7d1ddc3bc18a355"
+      url "https://github.com/instructure-bridge/truss-cli/releases/download/v0.0.9/truss-cli_0.0.9_Linux_x86_64.tar.gz"
+      sha256 "51a1b367d9cd72ecd924ad6669d2e993c749d60fce87d60709d0f24c648c2630"
     end
   end
   
