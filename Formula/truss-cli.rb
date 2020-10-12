@@ -2,16 +2,16 @@
 class TrussCli < Formula
   desc "CLI to help manage many k8s clusters"
   homepage "https://github.com/instructure-bridge/truss-cli"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/instructure-bridge/truss-cli/releases/download/v0.1.0/truss-cli_0.1.0_Darwin_x86_64.tar.gz"
-    sha256 "f6f314565f2ee0f4d1224689c7815765062e6c1d77275006b4dfaf722b2be1ce"
+    url "https://github.com/instructure-bridge/truss-cli/releases/download/v0.1.1/truss-cli_0.1.1_Darwin_x86_64.tar.gz"
+    sha256 "8b6fc976913773168bcaeb7ee6a7efe84810eb1fd33fbb2fcfc51cc02bb9e660"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/instructure-bridge/truss-cli/releases/download/v0.1.0/truss-cli_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "a00999cae7270fbe1388f86e624b77ecf3e14191c2a8803286744d93f8446a1e"
+      url "https://github.com/instructure-bridge/truss-cli/releases/download/v0.1.1/truss-cli_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "eb4332d4b824b632b27cf06b5dcec2b2f3524ea93829a4ee4ae728f6df08baa3"
     end
   end
   
