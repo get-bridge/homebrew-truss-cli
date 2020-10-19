@@ -5,6 +5,14 @@ class TrussCli < Formula
   version "0.2.1"
   bottle :unneeded
 
+  opoo "We have moved the recipe for `truss-cli` to the private repository"
+  opoo "`homebrew-tap`!"
+
+  odie """To upgrade `truss-cli`, you can switch to the new repo using:
+    brew untap instructure-bridge/truss-cli
+    brew tap instructure-bridge/tap git@github.com:instructure-bridge/homebrew-tap.git
+    brew upgrade truss-cli"""
+
   if OS.mac?
     url "https://github.com/instructure-bridge/truss-cli/releases/download/v0.2.1/truss-cli_0.2.1_Darwin_x86_64.tar.gz"
     sha256 "dc5bc01bf1691ca27eba9060faf8ac83b9e4c5a491f433fb8353d39eee1cca9f"
@@ -14,7 +22,7 @@ class TrussCli < Formula
       sha256 "b63823ea0397888782cbc4c9f3e879ba4d82c9c468d6c33d69052e0c2f2491ac"
     end
   end
-  
+
   depends_on "kubectl"
   depends_on "vault"
   depends_on "sshuttle"
