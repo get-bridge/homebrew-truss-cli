@@ -1,3 +1,7 @@
+# !!!DEPRECATED!!!
+
+Please check out the [instructure-bridge/homebrew-tap](https://github.com/instructure-bridge/homebrew-tap) repository for the taps previously found in this repository!
+
 # Instructure Truss-cli
 
 ## How do I install these formulae?
