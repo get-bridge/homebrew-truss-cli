@@ -7,8 +7,15 @@ class TrussCli < Formula
 
   opoo "We have moved the recipe for `truss-cli` to the private repository"
   opoo "`homebrew-tap`!"
-
+  opoo ""
+  opoo "To start using the new tap, first go to your GitHub account and create a new token:"
+  opoo "https://github.com/settings/tokens/new?scopes=repo&description=Homebrew%20for%20Bridge%20Tools"
+  opoo "Then add your token to your `~/.bash_profile`:"
+  opoo ""
+  opoo "  export HOMEBREW_GITHUB_API_TOKEN=..."
+  opoo ""
   odie """To upgrade `truss-cli`, you can switch to the new repo using:
+
     brew untap instructure-bridge/truss-cli
     brew tap instructure-bridge/tap git@github.com:instructure-bridge/homebrew-tap.git
     brew upgrade truss-cli"""
